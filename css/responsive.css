@@ -76,6 +76,16 @@
  @media screen and (max-width: 768px) {
  	.banner-inner-wrapper {
  		text-align: center;
+ 		width: 100%;
+ 	}
+
+ 	.intro-content h1 {
+ 		font-size: 45px;
+ 		font-weight: 700;
+ 	}
+
+ 	.footer {
+ 		transform: scale(1.1);
  	}
 
  	.banner-text {
