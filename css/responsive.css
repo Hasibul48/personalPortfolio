@@ -84,6 +84,22 @@
  		font-weight: 700;
  	}
 
+ 	.skillWrapper {
+ 		display: flex;
+ 		flex-direction: column;
+ 	}
+
+ 	.singleSkillbox {
+ 		height: 270px;
+ 		width: 60%;
+ 		margin: auto;
+ 		margin-bottom: 25%;
+ 	}
+
+ 	.boxInner {
+ 		height: 100%;
+ 	}
+
  	.footer {
  		transform: scale(1.1);
  	}
