@@ -443,6 +443,11 @@ ul li {
 	transform: scale(.8);
 }
 
+.titleText {
+	text-decoration: underline;
+	letter-spacing: 3px;
+}
+
 /* ------------------------------------------------
 	Skills
 ----------------------------------------------------*/
