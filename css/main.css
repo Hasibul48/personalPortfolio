@@ -438,6 +438,42 @@ ul li {
 /* ------------------------------------------------
 	Skills
 ----------------------------------------------------*/
+.skillCover {
+	align-items: center;
+	justify-content: center;
+	margin-top: 5%;
+}
+
+.skillCover img:nth-child(2) {
+	margin: auto;
+	width: 25%;
+	animation-name: reactLogo;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+}
+
+.skillCover img {
+	border-radius: 20%;
+	width: 60%;
+	margin: auto;
+	transition: .2s;
+}
+
+.skillCover img:hover {
+	box-shadow: 0px 0px 50px rgb(31, 31, 233);
+	transform: translateY(-5px);
+}
+
+@keyframes reactLogo {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
 
 /* ------------------------------------------------
 	Skills
