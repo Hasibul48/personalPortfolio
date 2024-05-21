@@ -84,6 +84,15 @@
  		font-weight: 700;
  	}
 
+ 	.myCardWrapper {
+ 		display: flex;
+ 		justify-content: space-between;
+ 	}
+
+ 	.myCard {
+ 		width: 50%;
+ 	}
+
  	.footer {
  		transform: scale(1.1);
  	}
@@ -117,6 +126,15 @@
  	.banner-text {
  		padding-top: 35%;
  		text-align: center;
+ 	}
+
+ 	.myCardWrapper {
+ 		flex-direction: column;
+ 	}
+
+ 	.myCard {
+ 		width: 80%;
+ 		margin: auto;
  	}
  }
 
