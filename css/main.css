@@ -54,10 +54,9 @@ h5 {
 	font-weight: 400;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-
-	background-color: #2ED69F;
-	color: black;
-	border: 2px solid #2ED69F;
+	color: #fff;
+	background-color: rgb(31, 31, 233);
+	border: 2px solid rgb(31, 31, 233);
 	padding: 1rem 2rem;
 	border-radius: 6px;
 	transition: all 0.5s ease-in-out;
@@ -65,9 +64,9 @@ h5 {
 
 .btn:hover,
 .btn:focus {
-	background-color: #2a2a2a;
+	background: transparent;
 	color: #fff;
-	box-shadow: 2px 2px 15px #2ED69F;
+	box-shadow: 2px 2px 15px rgb(31, 31, 233);
 }
 
 .btn-large {
@@ -194,7 +193,7 @@ ul li {
 
 .navigation a:hover,
 .navigation a.active {
-	color: #2ED69F;
+	color: rgb(31, 31, 233);
 }
 
 .nav-toggle {
@@ -374,10 +373,16 @@ ul li {
 .mainImage {
 	width: 100%;
 	border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-	border-width: 3px;
+	border-width: 2px;
 	border-style: solid;
-	border-color: #2ED69F;
-	box-shadow: 5px 4px 15px #2ED69F;
+	border-color: rgb(31, 31, 233);
+	box-shadow: 0px 0px 40px rgb(31, 31, 233);
+	transition: .3s;
+}
+
+.mainImage:hover {
+	transform: translateY(-2px);
+	box-shadow: 0px 0px 60px rgb(31, 31, 233);
 }
 
 .banner-inner-wrapper {
