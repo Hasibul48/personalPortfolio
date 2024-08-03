@@ -13,7 +13,7 @@ function Navbar() {
     }
 
     return (
-        <div className='md:flex shadow-md shadow-gray-700 pb-1 md:pt-2 justify-between bg-slate-900 text-white'>
+        <div className='border-b-4 border-[#872374] md:flex shadow-md shadow-gray-700 pb-2 md:pt-2 justify-between bg-slate-900 text-white'>
             <div className="md:container mx-auto md:flex 
             justify-between items-center">
                 <div className="flex justify-between">
