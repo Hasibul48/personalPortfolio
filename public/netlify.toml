@@ -1,4 +1,0 @@
-[[redirects]]
-  from = "*"
-  to = "./src/Pages/Page404.jsx"
-  status = 404
