@@ -3,7 +3,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 function Page404() {
     return (
-        <div class="h-[80vh] w-full flex flex-col justify-center items-center bg-[#1A2238]">
+        <div class="h-[75vh] w-full flex flex-col justify-center items-center bg-slate-900">
             <h1 class="text-9xl font-extrabold text-white tracking-widest">404</h1>
             <div class="bg-[#FF6A3D] px-2 text-sm rounded rotate-12 absolute">
                 Page Not Found

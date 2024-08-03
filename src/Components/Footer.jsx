@@ -15,15 +15,15 @@ function FooterComponent() {
                         <div>
                             <Footer.Title title="Quick Links" />
                             <Footer.LinkGroup col>
-                                <Footer.Link href="/about">About</Footer.Link>
-                                <Footer.Link href="/blogs">Blogs</Footer.Link>
+                                <Link to="/about">About</Link>
+                                <Link to="/blogs">Blogs</Link>
                             </Footer.LinkGroup>
                         </div>
                         <div>
                             <Footer.Title title="Follow me" />
                             <Footer.LinkGroup col>
-                                <Footer.Link href="https://github.com/Hasibul48">Github</Footer.Link>
-                                <Footer.Link href="https://www.linkedin.com/in/hm-hasibul-islam/">LinkedIn</Footer.Link>
+                                <Footer.Link to="https://github.com/Hasibul48">Github</Footer.Link>
+                                <Footer.Link to="https://www.linkedin.com/in/hm-hasibul-islam/">LinkedIn</Footer.Link>
                             </Footer.LinkGroup>
                         </div>
                         <div>
