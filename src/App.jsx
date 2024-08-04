@@ -6,6 +6,8 @@ import Home from './Pages/Home'
 import About from './Pages/About'
 import Blogs from './Pages/Blogs'
 import Page404 from './Pages/Page404'
+import Privacy from './Pages/Privacy'
+import Terms from './Pages/Terms'
 
 
 function App() {
@@ -20,6 +22,9 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/blogs' element={<Blogs />} />
+          <Route path='/privacy-policy' element={<Privacy />} />
+          <Route path='/terms-conditions' element={<Terms />} />
+
           <Route path='*' element={<Page404 />} />
         </Routes>
 
