@@ -8,8 +8,6 @@ function Navbar() {
 
     const handleToggle = () => {
         setIsOpen(!isOpen);
-
-        console.log(isOpen)
     }
 
     return (
