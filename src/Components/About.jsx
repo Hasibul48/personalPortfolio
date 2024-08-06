@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
     return (
-        <div className='md:mt-10 mt-28 container'>
+        <div className='md:mt-10 mt-28 container mx-auto'>
             <h2 className='text-center font-handWriting md:text-5xl text-4xl tracking-wider '>About Me</h2>
             <div className="md:flex justify-center items-center">
                 <div className="flex-1 px-7">
