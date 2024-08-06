@@ -8,7 +8,14 @@ export default {
     flowbite.content(),
   ],
   theme: {
-    extend: {},
+    colors: {
+      themeColor: "#872374"
+    },
+    extend: {
+      fontFamily: {
+        "handWriting": ["Edu AU VIC WA NT Hand", "cursive"]
+      }
+    },
   },
   plugins: [
     flowbite.plugin(),

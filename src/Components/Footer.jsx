@@ -5,7 +5,7 @@ import { Footer } from "flowbite-react";
 import { Link } from 'react-router-dom';
 function FooterComponent() {
     return (
-        <Footer className='shadow-lg shadow-gray-700 mt-24 border-t-4 border-[#872374] bg-slate-900 text-white' container>
+        <Footer className='shadow-lg shadow-gray-700 mt-24 border-t-4 border-themeColor bg-slate-900 text-white' container>
             <div className="w-full">
                 <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
                     <div className='mb-5 md:mb-0'>

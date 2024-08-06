@@ -11,7 +11,7 @@ function Navbar() {
     }
 
     return (
-        <div className='border-b-4 border-[#872374] md:flex shadow-md shadow-gray-700 pb-2 md:pt-2 justify-between bg-slate-900 text-white'>
+        <div className='border-b-4 border-themeColor md:flex shadow-md shadow-gray-700 pb-2 md:pt-2 justify-between bg-slate-900 text-white'>
             <div className="md:container mx-auto md:flex 
             justify-between items-center">
                 <div className="flex justify-between">
@@ -29,9 +29,9 @@ function Navbar() {
 
                 {/* mobile screen */}
                 {isOpen && <ul className='text-center md:hidden flex-col flex gap-1 '>
-                    <NavLink className={'py-2 hover:bg-[#971F6E] hover:text-white transition-colors'} to={'/'}>Home</NavLink>
-                    <NavLink className={'py-2 hover:bg-[#971F6E] hover:text-white transition-colors'} to={'/about'}>About</NavLink>
-                    <NavLink className={'py-2 hover:bg-[#971F6E] hover:text-white transition-colors'} to={'/blogs'}>Blogs</NavLink>
+                    <NavLink className={'py-2 hover:bg-themeColor hover:text-white transition-colors'} to={'/'}>Home</NavLink>
+                    <NavLink className={'py-2 hover:bg-themeColor hover:text-white transition-colors'} to={'/about'}>About</NavLink>
+                    <NavLink className={'py-2 hover:bg-themeColor hover:text-white transition-colors'} to={'/blogs'}>Blogs</NavLink>
                 </ul>}
 
             </div>

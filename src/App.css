@@ -2,3 +2,7 @@ body {
     background-color: #0F172A;
     color: white;
 }
+
+.headerImg {
+    border-radius: 47% 53% 40% 60% / 30% 43% 57% 70%;
+}
