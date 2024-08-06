@@ -2,13 +2,13 @@ import React from 'react'
 
 function Terms() {
     return (
-        <div className='shadow-lg shadow-gray-700 border-[#872374] border rounded-2xl mt-6   container mx-auto px-7 py-4 flex flex-col gap-5'>
+        <div className='shadow-lg shadow-gray-700 border-themeColor border rounded-2xl mt-6   container mx-auto px-7 py-4 flex flex-col gap-5'>
             <h1 className='text-2xl text-center mb-6 mt-5'>Terms & Conditions</h1>
 
             <div className="textSection">
                 <b>Introduction</b>
                 <p>
-                    TThese Terms and Conditions govern your use of this website, <a href="hmhasibul.netlify.app">hmhasibul.netlify.app</a> By accessing and using this website, you agree to be bound by these terms.
+                    These Terms and Conditions govern your use of this website, <a href="hmhasibul.netlify.app">hmhasibul.netlify.app</a> By accessing and using this website, you agree to be bound by these terms.
                 </p>
             </div>
 
