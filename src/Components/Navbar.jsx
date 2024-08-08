@@ -23,10 +23,10 @@ function Navbar() {
                     </svg>}
                 </div>
 
-                <ul className={`transition-opacity md:flex md:opacity-100 text-center ${isOpen ? 'opacity-100 flex' : 'opacity-0 hidden'} md:flex-row flex-col  gap-4`}>
-                    <NavLink onClick={handleToggle} className={'py-2 hover:bg-themeColor hover:text-white transition-colors'} to={'/'}>Home</NavLink>
-                    <NavLink onClick={handleToggle} className={'py-2 hover:bg-themeColor hover:text-white transition-colors'} to={'/about'}>About</NavLink>
-                    <NavLink onClick={handleToggle} className={'py-2 hover:bg-themeColor hover:text-white transition-colors'} to={'/blogs'}>Blogs</NavLink>
+                <ul className={`text-center md:flex ${isOpen ? 'flex' : 'hidden'} md:flex-row flex-col  gap-4`}>
+                    <NavLink onClick={handleToggle} className={'py-2 hover:bg-themeColor md:px-3 md:rounded-xl hover:text-white'} to={'/'}>Home</NavLink>
+                    <NavLink onClick={handleToggle} className={'py-2 hover:bg-themeColor md:px-3 md:rounded-xl hover:text-white '} to={'/about'}>About</NavLink>
+                    <NavLink onClick={handleToggle} className={'py-2 hover:bg-themeColor md:px-3 md:rounded-xl hover:text-white'} to={'/blogs'}>Blogs</NavLink>
                 </ul>
 
             </div>
