@@ -28,10 +28,10 @@ function Navbar() {
                 </ul>
 
                 {/* mobile screen */}
-                {isOpen && <ul className='text-center md:hidden flex-col flex gap-1 '>
-                    <NavLink className={'py-2 hover:bg-themeColor hover:text-white transition-colors'} to={'/'}>Home</NavLink>
-                    <NavLink className={'py-2 hover:bg-themeColor hover:text-white transition-colors'} to={'/about'}>About</NavLink>
-                    <NavLink className={'py-2 hover:bg-themeColor hover:text-white transition-colors'} to={'/blogs'}>Blogs</NavLink>
+                {isOpen && <ul className='text-center md:hidden flex-col flex gap-1'>
+                    <NavLink onClick={handleToggle} className={'py-2 hover:bg-themeColor hover:text-white transition-colors'} to={'/'}>Home</NavLink>
+                    <NavLink onClick={handleToggle} className={'py-2 hover:bg-themeColor hover:text-white transition-colors'} to={'/about'}>About</NavLink>
+                    <NavLink onClick={handleToggle} className={'py-2 hover:bg-themeColor hover:text-white transition-colors'} to={'/blogs'}>Blogs</NavLink>
                 </ul>}
 
             </div>
