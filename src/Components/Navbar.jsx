@@ -11,7 +11,7 @@ function Navbar() {
     }
 
     return (
-        <div className='border-b-4 border-themeColor md:flex shadow-md shadow-gray-700 pb-2 md:pt-2 justify-between bg-slate-900 text-white'>
+        <div className='border-b-4 border-themeColor md:flex shadow-md shadow-gray-700 md:pb-2 md:pt-2 justify-between bg-slate-900 text-white'>
             <div className="md:container mx-auto md:flex 
             justify-between items-center">
                 <div className="flex justify-between">
@@ -23,18 +23,11 @@ function Navbar() {
                     </svg>}
                 </div>
 
-                <ul className='text-center hidden md:flex gap-4 '>
-                    <li className='md:hover:bg-transparent hover:bg-yellow-200 py-2'><NavLink to={'/'}>Home</NavLink></li>
-                    <li className='md:hover:bg-transparent hover:bg-yellow-200 py-2'><NavLink to={'/about'}>About</NavLink></li>
-                    <li className='md:hover:bg-transparent hover:bg-yellow-200 py-2'><NavLink to={'/blogs'}>Blogs</NavLink></li>
-                </ul>
-
-                {/* mobile screen */}
-                {isOpen && <ul className='text-center md:hidden flex-col flex gap-1'>
+                <ul className={`transition-opacity md:flex md:opacity-100 text-center ${isOpen ? 'opacity-100 flex' : 'opacity-0 hidden'} md:flex-row flex-col  gap-4`}>
                     <NavLink onClick={handleToggle} className={'py-2 hover:bg-themeColor hover:text-white transition-colors'} to={'/'}>Home</NavLink>
                     <NavLink onClick={handleToggle} className={'py-2 hover:bg-themeColor hover:text-white transition-colors'} to={'/about'}>About</NavLink>
                     <NavLink onClick={handleToggle} className={'py-2 hover:bg-themeColor hover:text-white transition-colors'} to={'/blogs'}>Blogs</NavLink>
-                </ul>}
+                </ul>
 
             </div>
 
