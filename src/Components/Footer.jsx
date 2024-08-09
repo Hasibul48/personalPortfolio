@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BsFacebook, BsGithub, BsLinkedin, BsInstagram } from 'react-icons/bs';
+import { BsFacebook, BsGithub, BsLinkedin, BsInstagram, BsWhatsapp } from 'react-icons/bs';
 import { Footer } from "flowbite-react";
 import { Link } from 'react-router-dom';
 function FooterComponent() {
@@ -41,6 +41,7 @@ function FooterComponent() {
                     <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
                         <Footer.Icon href="/facebook" icon={BsFacebook} />
                         <Footer.Icon href="https://www.instagram.com/hmhasibul482023/" icon={BsInstagram} />
+                        <Footer.Icon href="https://wa.link/7x54qw" icon={BsWhatsapp} />
                         {/* <Footer.Icon href="#" icon={BsTwitter} /> */}
                         <Footer.Icon href='https://www.linkedin.com/in/hm-hasibul-islam/' icon={BsLinkedin} />
                         <Footer.Icon href="https://github.com/Hasibul48" icon={BsGithub} />
