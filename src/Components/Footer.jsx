@@ -22,8 +22,8 @@ function FooterComponent() {
                         <div>
                             <Footer.Title title="Follow me" />
                             <Footer.LinkGroup col>
-                                <Footer.Link to="https://github.com/Hasibul48">Github</Footer.Link>
-                                <Footer.Link to="https://www.linkedin.com/in/hm-hasibul-islam/">LinkedIn</Footer.Link>
+                                <Link to="https://github.com/Hasibul48">Github</Link>
+                                <Link to="https://www.linkedin.com/in/hm-hasibul-islam/">LinkedIn</Link>
                             </Footer.LinkGroup>
                         </div>
                         <div>
