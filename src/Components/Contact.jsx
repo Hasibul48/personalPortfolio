@@ -29,11 +29,9 @@ function Contact() {
             alert('Please enter a valid email address.')
             return;
         }
+
         setMessageStatus(await emailjs.sendForm('service_tmw9zh5', 'template_uuc911s', form, 'Qimg0YhCTRJvY6fe4'));
 
-        if (!messageStatus) {
-            alert('Message Sending Unsuccessful!');
-        }
         alert("Message Sent Successfully!")
         setIsLoading(false)
     };
