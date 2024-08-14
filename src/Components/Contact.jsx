@@ -42,7 +42,7 @@ function Contact() {
 
         <div className="container md:w-3/4 lg:px-28 md:border-4 md:shadow-md md:shadow-gray-500 md:border-themeColor md:py-24 rounded-3xl flex flex-col gap-5 mt-24 mx-auto px-4">
             <h3 className='text-center tracking-widest text-themeColor font-bold text-2xl'><span className='text-orange-300'>C</span>ont<span className='text-orange-300'>act m</span>e</h3>
-            <form onSubmit={handleMessageSend}>
+            <form className='flex flex-col gap-4' onSubmit={handleMessageSend}>
                 <div className="flex flex-col">
                     <label htmlFor="name">Enter Your Name</label>
                     <input name='from_name' type="text" className='bg-transparent border-themeColor shadow-themeColor shadow-sm rounded-2xl mt-2' placeholder='Ex: John Doe' />
@@ -53,7 +53,7 @@ function Contact() {
                 </div>
                 <div className="flex flex-col">
                     <label htmlFor="name">Enter Your Messege</label>
-                    <input name='message' type="text" className='bg-transparent pb-20 border-themeColor shadow-themeColor shadow-sm rounded-2xl mt-2' placeholder='Ex: enter your own messege with details.....' />
+                    <textarea name='message' className='bg-transparent h-40 border-themeColor shadow-themeColor shadow-sm rounded-2xl mt-2' placeholder='Ex: enter your own message with details.....' />
                 </div>
                 <Button disabled={isLoading} type='submit' className='w-1/2 mx-auto mt-6 rounded-full' gradientDuoTone="purpleToPink">{isLoading ? 'Loading...' : 'Send Message'}</Button>
             </form>
