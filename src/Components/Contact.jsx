@@ -5,7 +5,13 @@ import emailjs from '@emailjs/browser'
 
 function Contact() {
     const [messageStatus, setMessageStatus] = useState();
+    const [isLoading, setIsLoading] = useState();
+
+    // Simple email validation regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     const handleMessageSend = async (e) => {
+        setIsLoading(true);
         e.preventDefault();
 
         const form = e.target;
@@ -15,14 +21,21 @@ function Contact() {
 
         if (!name || !email || !message) {
             alert('All fields are required.');
+            setIsLoading(false);
             return;
         }
 
+        if (!emailRegex.test(email)) {
+            alert('Please enter a valid email address.')
+            return;
+        }
         setMessageStatus(await emailjs.sendForm('service_tmw9zh5', 'template_uuc911s', form, 'Qimg0YhCTRJvY6fe4'));
 
-        if (messageStatus) {
-            alert('Message Sent Successfully!');
+        if (!messageStatus) {
+            alert('Message Sending Unsuccessful!');
         }
+        alert("Message Sent Successfully!")
+        setIsLoading(false)
     };
 
     return (
@@ -42,7 +55,7 @@ function Contact() {
                     <label htmlFor="name">Enter Your Messege</label>
                     <input name='message' type="text" className='bg-transparent pb-20 border-themeColor shadow-themeColor shadow-sm rounded-2xl mt-2' placeholder='Ex: enter your own messege with details.....' />
                 </div>
-                <Button type='submit' className='w-1/2 mx-auto mt-6 rounded-full' gradientDuoTone="purpleToPink">Send Message</Button>
+                <Button disabled={isLoading} type='submit' className='w-1/2 mx-auto mt-6 rounded-full' gradientDuoTone="purpleToPink">{isLoading ? 'Loading...' : 'Send Message'}</Button>
             </form>
         </div>
     )
