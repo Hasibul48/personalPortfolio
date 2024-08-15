@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
     return (
-        <div className='md:flex md:py-32 justify-center container p-10 items-center'>
+        <div className='md:flex md:py-32 justify-center container p-10 items-center mt-16 md:mt-0'>
             <div className="flex-1">
                 <img className={'headerImg mx-auto lg:w-3/4 shadow-2xl shadow-gray-700 border-4 border-themeColor'} src="img/profileImage.jpg" alt="image missing..." />
             </div>

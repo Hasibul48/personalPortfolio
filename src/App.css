@@ -3,6 +3,12 @@ body {
     color: white;
 }
 
+/* Navbar Active class */
+.active {
+    background-color: #872374;
+
+}
+
 .headerImg {
     border-radius: 47% 53% 40% 60% / 30% 43% 57% 70%;
 
