@@ -2,7 +2,7 @@ import React from 'react'
 
 function Privacy() {
   return (
-    <div className='shadow-lg shadow-gray-700 border-themeColor border rounded-2xl mt-6   container mx-auto px-7 py-4 flex flex-col gap-5'>
+    <div className='shadow-lg shadow-gray-700 border-themeColor border rounded-2xl mt-20 md:mt-28  container mx-auto px-7 py-4 flex flex-col gap-5'>
       <h1 className='text-2xl text-center mb-6 mt-5'>Privacy & Policy</h1>
 
       <div className="textSection">

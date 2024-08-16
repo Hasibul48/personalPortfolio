@@ -21,7 +21,7 @@ function Navbar() {
                         </h1>
                     </Link>
                     <div className="flex items-center">
-                        <button onClick={handleToggle} className="text-white md:hidden">
+                        <button onClick={handleToggle} className="text-white md:hidden hover:text-themeColor">
                             {isOpen ? (
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -32,7 +32,7 @@ function Navbar() {
                                 </svg>
                             )}
                         </button>
-                        <ul className={`flex flex-col md:flex-row gap-3 md:items-center absolute md:static bg-slate-900 w-full left-0 md:w-auto transition-all duration-300 ease-in-out ${isOpen ? 'top-14' : 'top-[-490px]'} bg-[#0F172A]`}>
+                        <ul className={`flex flex-col md:flex-row gap-3 md:items-center absolute md:static w-full left-0 md:w-auto transition-all duration-300 ease-in-out ${isOpen ? 'top-14' : 'top-[-490px]'} bg-[#0F172A] border-b-4 md:border-b-0 border-themeColor pb-2 md:pb-0`}>
                             <li>
                                 <NavLink onClick={handleToggle} className='block py-2 px-4 hover:bg-themeColor text-center rounded-lg' to={'/'}>
                                     Home

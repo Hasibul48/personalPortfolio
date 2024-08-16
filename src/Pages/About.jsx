@@ -6,7 +6,7 @@ import Contact from '../Components/Contact'
 function About() {
     return (
         <>
-            <div className='shadow-lg shadow-gray-700 border-themeColor border rounded-2xl mt-6   container mx-auto py-4 flex flex-col gap-5'>
+            <div className='shadow-lg shadow-gray-700 border-themeColor border rounded-2xl mt-20 md:mt-28  container mx-auto py-4 flex flex-col gap-5'>
                 <AboutComponent />
                 <div className="px-7">
                     <div className="textSection text-center mt-10">
